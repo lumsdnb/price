@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --bgcolor: rgb(29, 29, 29);
+  --bgcolor2: rgb(55, 55, 55);
+  --text-color: rgb(200, 200, 200);
+}
+
+body {
+  margin: 0 3rem;
+  background-color: var(--bgcolor);
+  color: var(--text-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.card > * {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgcolor2);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+h2 {
+  line-height: 0.7;
+}
+
+.f100 {
+  flex-basis: 100%;
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+input {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}

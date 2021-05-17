@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>price checker</title>
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <h2 class="f100">1 bitcoin currently gets you</h2>
+        <span id="current-price"></span> <span> &nbsp; Euros &nbsp;</span
+        ><button onclick="getPrice()">refresh</button>
+      </header>
+      <form action="">
+        <label for="">
+          Enter Euro value
+          <input type="number" name="value-input" id="value-input" />
+        </label>
+        <input
+          type="button"
+          id="convert"
+          value="convert"
+          onclick="calculatePrice()"
+        />
+      </form>
+
+      <p id="result"></p>
+    </main>
+  </body>
+</html>
