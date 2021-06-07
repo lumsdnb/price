@@ -12,17 +12,17 @@ function calculatePrice() {
   console.log(`${input.value} divided by ${currentPrice.innerHTML}`);
 
 if(!isNaN(input.value)){
-    document.write(num1 + " is not a number <br/>");
  
   //divide by what user entered
-  let result = parseFloat(input.value) / price;
-//round to 10 dec
-results = Math.round(results*10000000000)/10000000000
+  let result = Math.round(parseFloat(input.value) / price
+*10000000000)/10000000000
   console.log(result);
   //output to dom
   resultNode.innerHTML = `${input.value} ${
     input.value == 1 ? 'Euro gives' : 'Euros give'
-  } you ${result} BTC`;
+  } you ${result} BTC 
+      
+  or ${result * 10000000000} sats` ;
 }
 }
 function getPrice() {
