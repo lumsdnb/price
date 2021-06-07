@@ -6,7 +6,8 @@ somewhat privacy friendly price checker
 
 - [x] get current price from coindesk api
 - [x] client side division & display
-- [ ] error checking (numbers only)
+- [x] proper rounding
+- [x] error checking (numbers only)
 - [ ] convert from btc to eur?
 - [ ] style it up
 - [ ] currency selector
