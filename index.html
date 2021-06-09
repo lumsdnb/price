@@ -11,21 +11,35 @@
   <body>
     <main class="card">
       <header>
-        <h2 class="f100">1 bitcoin currently gets you</h2>
+        <h2 class="f100"><strong> 1 bitcoin</strong> currently gets you</h2>
         <span id="current-price"></span> <span> &nbsp; Euros &nbsp;</span
         ><button onclick="getPrice()">refresh</button>
       </header>
       <form action="">
+        <ul>
+          <li>
+            <input type="radio" id="option_one" name="selector">
+            <label for="option_one"> from fiat</label>
+            <div class="radio_demo"></div>
+          </li>
+          <li>
+            <input type="radio" id="option_two" name="selector">
+            <label for="option_two"> from bitcoin</label>
+            <div class="radio_demo">
+              <div class="inside"></div>
+            </div>
+          </li>
+        </ul>
         <label for="">
-          Enter Euro value
+          Enter value
           <input type="number" name="value-input" id="value-input" />
         </label>
-        <input
-          type="button"
+        <button
+          type="submit"
           id="convert"
           value="convert"
           onclick="calculatePrice()"
-        />
+        >convert to</button>
       </form>
 
       <p id="result"></p>
