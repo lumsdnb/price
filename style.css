@@ -124,3 +124,12 @@ input[type='radio']:checked ~ .radio_demo {
 input[type='radio']:checked ~ .radio_demo::before {
   background: var(--orang);
 }
+
+#convert:hover {
+  background-color: var(--orang);
+  transform: scale(1.05);
+}
+
+#convert:active {
+  transform: scale(0.98);
+}
