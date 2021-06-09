@@ -8,7 +8,8 @@ somewhat privacy friendly price checker
 - [x] client side division & display
 - [x] proper rounding
 - [x] error checking (numbers only)
-- [ ] convert from btc to eur?
-- [ ] style it up
+- [x] convert from btc to eur?
+  - [ ] also nice to have: sat entry
+- [x] style it up (60 ish % there)
 - [ ] currency selector
 - [ ] average rate from multiple sites
