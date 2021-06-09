@@ -31,7 +31,7 @@ function calculatePrice(e) {
   if (radioTwo.checked === true) {
     //if from btc to fiat
     console.log('divide from b to f');
-    let result = parseFloat(input.value) * price;
+    let result = Math.round(parseFloat(input.value) * price * 100) / 100;
     console.log(result);
     //output to dom
     resultNode.innerHTML = `${input.value} ${
