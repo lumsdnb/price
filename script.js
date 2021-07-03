@@ -23,19 +23,22 @@ function calculatePrice(e) {
         10000000000;
       console.log(result);
       //output to dom
+      resultNode.classList.add('card-bg');
       resultNode.innerHTML = `${input.value} ${
         input.value == 1 ? 'Euro gives' : 'Euros give'
-      } you ${result} BTC or ${result * 10000000000} sats`;
+      } you <strong>${result} BTC </strong> or <strong>${
+        result * 10000000000
+      } sats</strong>`;
     }
   }
   if (radioTwo.checked === true) {
     //if from btc to fiat
-    console.log('divide from b to f');
     let result = Math.round(parseFloat(input.value) * price * 100) / 100;
     console.log(result);
     //output to dom
-    resultNode.innerHTML = `${input.value} ${
-      input.value === 1 ? 'BTC gives' : 'BTC give'
+    resultNode.classList.add('card-bg');
+    resultNode.innerHTML = `<strong>${input.value} ${
+      input.value == 1 ? 'BTC </strong> gives' : 'BTC </strong> give'
     } you ${result} EUR`;
   }
 }

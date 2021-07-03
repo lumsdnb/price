@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 html {
   --bgcolor: rgb(29, 29, 29);
   --bgcolor2: rgb(55, 55, 55);
   --text-color: rgb(200, 200, 200);
-  --highlight-color: #cde7dd;
+  --highlight-color: #dbdbdb;
   --orang: #ff9900;
 }
 
@@ -14,6 +15,10 @@ body {
   margin: 0 3rem;
   background-color: var(--bgcolor);
   color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -22,9 +27,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   height: 60vh;
+  max-width: 40rem;
 }
 .card > * {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 2rem;
 }
 header {
@@ -47,11 +53,18 @@ h2 {
   flex-basis: 100%;
 }
 
+.card-bg {
+  background: var(--bgcolor2);
+  padding: 1rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
 button {
   border: none;
   padding: 1rem;
   border-radius: 0.3rem;
   font-size: 1.2rem;
+  background-color: var(--highlight-color);
 }
 button:hover {
   background-color: var(--orang);
@@ -64,7 +77,9 @@ button:active {
 input {
   border: none;
   padding: 1rem;
+  margin: 0.1rem;
   border-radius: 0.3rem;
+  background-color: var(--highlight-color);
 }
 
 strong {
@@ -72,7 +87,10 @@ strong {
 }
 
 /*----------  radios ----------*/
-
+ul {
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+}
 ul li {
   display: block;
   position: relative;
@@ -81,17 +99,22 @@ ul li input[type='radio'] {
   position: absolute;
   visibility: hidden;
 }
+input[type='number'] {
+  user-select: text;
+}
 ul li label {
   display: block;
   position: relative;
   font-weight: 200;
-  font-size: 1.15em;
+  font-size: 0.8em;
   padding: 25px 25px 25px 80px;
   margin: 8px auto;
   height: 20px;
   z-index: 9;
   cursor: pointer;
+  flex-basis: 100%;
 }
+
 ul li:hover label {
   color: var(--orang);
   transform: scale(1.05);
