@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
   box-sizing: border-box;
   user-select: none;
@@ -9,6 +11,7 @@ html {
   --text-color: rgb(200, 200, 200);
   --highlight-color: #dbdbdb;
   --orang: #ff9900;
+  font-family: 'Quantico', sans-serif;
 }
 
 body {
